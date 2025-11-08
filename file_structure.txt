@@ -1,0 +1,27 @@
+darkpool-os/
+├── app/
+│   ├── core/
+│   │   ├── signals/           # Data fetchers
+│   │   │   ├── __init__.py
+│   │   │   ├── darkpool.py    # Large trade blocks
+│   │   │   ├── thirteenf.py   # 13F momentum
+│   │   │   ├── options.py     # Unusual options flow
+│   │   │   └── macro.py       # Macro indicators
+│   │   ├── charts/            # Visuals
+│   │   │   ├── __init__.py
+│   │   │   ├── darkpool_chart.py
+│   │   │   ├── ownership_chart.py
+│   │   │   ├── options_chart.py
+│   │   │   └── macro_chart.py
+│   │   ├── thread/            # Thread logic
+│   │   │   ├── __init__.py
+│   │   │   └── generator.py   # 5-tweet builder
+│   │   └── poster.py          # Tweepy thread poster
+│   ├── scheduler.py           # Daily rotation
+│   └── main.py                # Orchestrator
+├── data/                      # Future DB
+├── charts/                    # Output dir
+├── .env
+├── requirements.txt
+├── render.yaml
+└── README.md

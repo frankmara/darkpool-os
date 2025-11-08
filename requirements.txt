@@ -1,0 +1,7 @@
+tweepy>=4.14
+python-dotenv
+matplotlib
+pandas
+requests
+plotly
+kaleido

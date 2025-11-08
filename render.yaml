@@ -1,0 +1,9 @@
+services:
+  - type: cron
+    name: darkpool-v2
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app/main.py
+    schedule: "0 8,12,16 * * *"  # 8 AM, 12 PM, 4 PM MST
+    plan: free
