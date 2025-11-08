@@ -5,7 +5,7 @@ from core.charts import darkpool_chart, ownership_chart, options_chart, macro_ch
 from core.thread import generator
 from core.poster import post_thread_with_image
 from datetime import datetime
-from datetime import time
+import time  # Correct module for sleep
 
 SYMBOLS = ["NVDA", "TSLA", "AAPL", "MSFT"]
 SIGNAL_TYPES = ["darkpool", "13f", "options", "macro"]
